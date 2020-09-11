@@ -1,0 +1,15 @@
+logging:
+  level:
+    com:
+      centene: debug
+
+spring:
+  datasource:
+    password: pwd
+    url: jdbc:mysql://localhost:3306/centene
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      show_sql: true
+      ddl-auto: create-drop
